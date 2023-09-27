@@ -23,8 +23,27 @@ void Cpp7_1()
 	cout << *pNum << endl;
 }
 
+void Cpp7_2()
+{
+	int nums[] = { 1,2,3 };
+	int* pNums = nums;
+}
+
+void Cpp7_3() 
+{
+	int* num = new int(123);
+	int* num1 = num;
+
+	cout << num << endl;
+	/*cout << *num1 << endl;
+
+	delete num;
+
+	cout << *num1 << endl;*/
+}
 
 int main()
 {
-	Cpp7_1();
+	//Cpp7_1();
+	Cpp7_3();
 }
