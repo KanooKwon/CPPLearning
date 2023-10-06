@@ -1,5 +1,6 @@
 #include <iostream>
-using namespace std;;
+#include <vector>
+using namespace std;
 
 void Cpp7_1()
 {
@@ -42,8 +43,44 @@ void Cpp7_3()
 	cout << *num1 << endl;*/
 }
 
+void Cpp7_5()
+{
+	int* p = nullptr;
+}
+
+void Cpp7_6() 
+{
+
+}
+
+void Cpp7_7()
+{
+	vector<int> vec(1);
+	vec.push_back(10);
+
+	for (int i = 0; i < vec.size(); i++)
+	{
+		cout << vec[i] << endl;
+	}
+
+	int* a = vec.data();
+
+	cout <<	a[0] << endl;
+
+	vector<int> vec0 = { 1,2,3 };
+	vector<int> vec1 = { 1,2,3,-1 };
+
+	if (vec0 == vec1)
+		cout << "=" << endl;
+	else if(vec0 > vec1)
+		cout << ">" << endl;
+	else
+		cout << "<" << endl;
+}
+
 int main()
 {
 	//Cpp7_1();
-	Cpp7_3();
+	//Cpp7_3();
+	Cpp7_7();
 }
